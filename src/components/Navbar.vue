@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { computed } from 'vue'
 import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/vue/24/outline'
 import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
 import { useI18n } from 'vue-i18n'
@@ -10,17 +9,17 @@ const { t, locale } = useI18n()
 const isOpen = ref(false)
 const router = useRouter()
 
-const navigation = computed(() => [
+const navigation = [
   { name: t('nav.accueil'), path: '/' },
   { name: t('nav.models'), path: '/models' },
-])
+]
 
-const services = computed(() => [
+const services = [
   { name: t('services.support'), path: '/technical-support' },
   { name: t('services.development'), path: '/app-development' },
   { name: t('services.graphicDesign'), path: '/graphic-design' },
   { name: t('services.digitalMarketing'), path: '/digital-marketing' },
-])
+]
 
 const toggleLanguage = () => {
   locale.value = locale.value === 'fr' ? 'en' : 'fr'
@@ -52,7 +51,7 @@ const closeMenuAndNavigate = (path: string) => {
         <!-- Desktop menu -->
         <div class="hidden md:flex md:items-center md:space-x-10">
           <router-link
-            v-for="item in navigation.value"
+            v-for="item in navigation"
             :key="item.name"
             :to="item.path"
             class="nav-link relative group py-2 text-base"
@@ -78,7 +77,7 @@ const closeMenuAndNavigate = (path: string) => {
               leave-to-class="transform scale-95 opacity-0"
             >
               <MenuItems class="absolute right-0 mt-3 w-72 origin-top-right rounded-2xl bg-white shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none p-2">
-                <MenuItem v-for="service in services.value" :key="service.name">
+                <MenuItem v-for="service in services" :key="service.name">
                   <router-link
                     :to="service.path"
                     class="group flex items-center px-4 py-3 rounded-lg hover:bg-gray-50 transition-all duration-200"
@@ -143,7 +142,7 @@ const closeMenuAndNavigate = (path: string) => {
       <div v-if="isOpen" class="md:hidden bg-white shadow-lg">
         <div class="pt-4 pb-6 px-5 space-y-2">
           <router-link
-            v-for="item in navigation.value"
+            v-for="item in navigation"
             :key="item.name"
             :to="item.path"
             class="block px-4 py-3 text-base font-semibold rounded-lg hover:bg-gray-50 hover:text-primary transition-all duration-200"
@@ -158,7 +157,7 @@ const closeMenuAndNavigate = (path: string) => {
             <div class="text-sm font-semibold text-gray-500 mb-3">{{ t('nav.services') }}</div>
             <div class="space-y-1">
               <router-link
-                v-for="service in services.value"
+                v-for="service in services"
                 :key="service.name"
                 :to="service.path"
                 class="block px-4 py-3 text-sm font-medium rounded-lg hover:bg-gray-50 hover:text-primary transition-all duration-200"
