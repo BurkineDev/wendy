@@ -275,7 +275,8 @@
       "message": "Message",
       "messagePlaceholder": "Your message...",
       "newsletter": "I want to receive Wendy's newsletter",
-      "send": "Send message"
+      "send": "Send message",
+      "other": "Other"
     },
     "info":  {
       "title": "Let's Stay in Touch",

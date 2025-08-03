@@ -23,6 +23,11 @@ const services = [
 
 const toggleLanguage = () => {
   locale.value = locale.value === 'fr' ? 'en' : 'fr'
+  localStorage.setItem('wendy-locale', locale.value)
+  // Réinitialiser la catégorie sélectionnée si on est sur la page modèles
+  if (router.currentRoute.value.name === 'models') {
+    // Cette logique pourrait être améliorée avec un store global
+  }
 }
 
 const closeMenuAndNavigate = (path: string) => {
@@ -142,7 +147,7 @@ const closeMenuAndNavigate = (path: string) => {
       <div v-if="isOpen" class="lg:hidden bg-white shadow-lg">
         <div class="pt-4 pb-6 px-4 sm:px-5 space-y-2">
           <router-link
-            v-for="item in navigation.value"
+            v-for="item in navigation"
             :key="item.name"
             :to="item.path"
             class="block px-4 py-3 text-sm sm:text-base font-semibold rounded-lg hover:bg-gray-50 hover:text-primary transition-all duration-200"
@@ -157,7 +162,7 @@ const closeMenuAndNavigate = (path: string) => {
             <div class="text-xs sm:text-sm font-semibold text-gray-500 mb-3">{{ t('nav.services') }}</div>
             <div class="space-y-1">
               <router-link
-                v-for="service in services.value"
+                v-for="service in services"
                 :key="service.name"
                 :to="service.path"
                 class="block px-4 py-2 sm:py-3 text-xs sm:text-sm font-medium rounded-lg hover:bg-gray-50 hover:text-primary transition-all duration-200"
