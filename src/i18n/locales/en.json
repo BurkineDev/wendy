@@ -27,10 +27,51 @@
       "title": "Templates",
       "subtitle": "Explore WordPress creations tailored to customers specific needs"
     },
+    "categories": {
+      "all": "All",
+      "ecommerce": "E-commerce",
+      "corporate": "Corporate",
+      "portfolio": "Portfolio",
+      "blog": "Blog"
+    },
+    "features": {
+      "title": "Why Choose Our Templates?",
+      "subtitle": "Turnkey solutions to launch your project quickly",
+      "customizable": {
+        "title": "Customizable Templates",
+        "description": "Easily adapt our templates to your brand image and specific needs with our advanced customization tools."
+      },
+      "installation": {
+        "title": "Quick Installation",
+        "description": "Setup in 2-3 business days with complete configuration, training and technical support included."
+      },
+      "design": {
+        "title": "Premium Design",
+        "description": "Elegant and responsive interfaces designed according to the latest UX/UI trends for an exceptional user experience."
+      }
+    },
+    "modal": {
+      "mainFeatures": "Main Features",
+      "technologies": "Technologies Used",
+      "projectInfo": "Project Information",
+      "category": "Category",
+      "installTime": "Installation Time",
+      "installTimeValue": "2-3 business days",
+      "support": "Support Included",
+      "supportValue": "6 months free",
+      "customization": "Customization",
+      "customizationValue": "Complete",
+      "close": "Close",
+      "empty": {
+        "title": "No templates found",
+        "description": "Try another category or contact us for a custom template."
+      }
+    },
     "preview": "View details",
     "contact": "Contact us",
     "cta": {
-      "title": "Ready to create your website ?",
+      "title": "Ready to transform your vision into reality?",
+      "subtitle": "Transform your vision into reality with our professional templates and technical expertise.",
       "button": "Start Now"
     }
   },

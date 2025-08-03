@@ -127,7 +127,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-wrap justify-center gap-3 sm:gap-4">
           <button
-            v-for="category in categories"
+            v-for="category in categories.value"
             :key="category"
             @click="selectedCategory = category"
             class="group relative px-4 sm:px-6 lg:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base font-semibold transition-all duration-300 transform hover:scale-105"
@@ -264,8 +264,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.34 0-4.5-1.01-6-2.709V16.5A1.5 1.5 0 007.5 18h9a1.5 1.5 0 001.5-1.5v-3.209z" />
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-2">Aucun modèle trouvé</h3>
-          <p class="text-gray-600">Essayez une autre catégorie ou contactez-nous pour un modèle personnalisé.</p>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ t('models.modal.empty.title') }}</h3>
+          <p class="text-gray-600">{{ t('models.modal.empty.description') }}</p>
         </div>
       </div>
     </section>
@@ -275,10 +275,10 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12 sm:mb-16">
           <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4" data-aos="fade-up">
-            Pourquoi Choisir Nos Modèles ?
+            {{ t('models.features.title') }}
           </h2>
           <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-            Des solutions clés en main pour lancer votre projet rapidement
+            {{ t('models.features.subtitle') }}
           </p>
         </div>
 
@@ -293,8 +293,12 @@
             <div class="h-12 w-12 sm:h-16 sm:w-16 bg-gradient-to-br from-primary/20 to-orange-500/20 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
               <component :is="feature.icon" class="h-6 w-6 sm:h-8 sm:w-8 text-primary group-hover:text-orange-600 transition-colors duration-300" />
             </div>
-            <h3 class="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-gray-900 group-hover:text-primary transition-colors duration-300">{{ feature.title }}</h3>
-            <p class="text-sm sm:text-base text-gray-600 leading-relaxed">{{ feature.description }}</p>
+            <h3 class="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-gray-900 group-hover:text-primary transition-colors duration-300">
+              {{ t(`models.features.${feature.key}.title`) }}
+            </h3>
+            <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+              {{ t(`models.features.${feature.key}.description`) }}
+            </p>
           </div>
         </div>
       </div>
@@ -416,7 +420,7 @@
                         <div>
                           <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 flex items-center gap-3">
                             <div class="w-1 h-8 bg-gradient-to-b from-blue-500 to-purple-600 rounded-full"></div>
-                            Technologies utilisées
+                              {{ t('models.modal.mainFeatures') }}
                           </h3>
                           <div class="flex flex-wrap gap-3">
                             <span 
@@ -432,23 +436,23 @@
 
                       <!-- Enhanced Sidebar -->
                       <div class="space-y-6 sm:space-y-8">
-                        <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 sm:p-8 border border-gray-200">
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-4 sm:mb-6">{{ t('models.modal.projectInfo') }}</h3>
                           <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-4 sm:mb-6">Informations projet</h3>
                           <dl class="space-y-4">
-                            <div class="group">
+                                <dt class="text-sm font-medium text-gray-500 mb-1">{{ t('models.modal.category') }}</dt>
                               <dt class="text-sm font-medium text-gray-500 mb-1">Catégorie</dt>
                               <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">{{ selectedModel.category }}</dd>
                             </div>
-                            <div class="group">
-                              <dt class="text-sm font-medium text-gray-500 mb-1">Temps d'installation</dt>
+                                <dt class="text-sm font-medium text-gray-500 mb-1">{{ t('models.modal.installTime') }}</dt>
+                                <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">{{ t('models.modal.installTimeValue') }}</dd>
                               <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">2-3 jours ouvrés</dd>
                             </div>
-                            <div class="group">
-                              <dt class="text-sm font-medium text-gray-500 mb-1">Support inclus</dt>
+                                <dt class="text-sm font-medium text-gray-500 mb-1">{{ t('models.modal.support') }}</dt>
+                                <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">{{ t('models.modal.supportValue') }}</dd>
                               <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">6 mois gratuits</dd>
                             </div>
-                            <div class="group">
-                              <dt class="text-sm font-medium text-gray-500 mb-1">Personnalisation</dt>
+                                <dt class="text-sm font-medium text-gray-500 mb-1">{{ t('models.modal.customization') }}</dt>
+                                <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">{{ t('models.modal.customizationValue') }}</dd>
                               <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">Complète</dd>
                             </div>
                           </dl>
@@ -468,7 +472,7 @@
                           <button 
                             @click="closePreview"
                             class="w-full px-6 py-4 bg-gray-100 hover:bg-gray-200 text-gray-700 hover:text-gray-900 font-semibold rounded-xl transition-all duration-300"
-                          >
+                              {{ t('models.modal.close') }}
                             Fermer
                           </button>
                         </div>
@@ -502,25 +506,28 @@ import {
 
 const { t } = useI18n()
 const modelsSection = ref<HTMLElement | null>(null)
-const selectedCategory = ref('Tous')
+const selectedCategory = ref(t('models.categories.all'))
 
-const categories = ['Tous', 'E-commerce', 'Corporate', 'Portfolio', 'Blog']
+const categories = computed(() => [
+  t('models.categories.all'),
+  t('models.categories.ecommerce'), 
+  t('models.categories.corporate'),
+  t('models.categories.portfolio'),
+  t('models.categories.blog')
+])
 
 const features = [
   {
     icon: CubeIcon,
-    title: 'Modèles Personnalisables',
-    description: 'Adaptez facilement nos modèles à votre image de marque et vos besoins spécifiques avec nos outils de personnalisation avancés.'
+    key: 'customizable'
   },
   {
     icon: AdjustmentsHorizontalIcon,
-    title: 'Installation Rapide',
-    description: 'Mise en place en 2-3 jours ouvrés avec configuration complète, formation et support technique inclus.'
+    key: 'installation'
   },
   {
     icon: SparklesIcon,
-    title: 'Design Premium',
-    description: 'Interfaces élégantes et responsive conçues selon les dernières tendances UX/UI pour une expérience utilisateur exceptionnelle.'
+    key: 'design'
   }
 ]
 
@@ -618,7 +625,7 @@ const models = [
 ]
 
 const filteredModels = computed(() => {
-  if (selectedCategory.value === 'Tous') return models
+  if (selectedCategory.value === t('models.categories.all')) return models
   return models.filter(model => model.category === selectedCategory.value)
 })
 

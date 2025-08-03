@@ -27,10 +27,51 @@
       "title": "Les modèles",
       "subtitle": "Explorez des créations WordPress adaptées aux besoins spécifiques des clients"
     },
+    "categories": {
+      "all": "Tous",
+      "ecommerce": "E-commerce",
+      "corporate": "Corporate",
+      "portfolio": "Portfolio",
+      "blog": "Blog"
+    },
+    "features": {
+      "title": "Pourquoi Choisir Nos Modèles ?",
+      "subtitle": "Des solutions clés en main pour lancer votre projet rapidement",
+      "customizable": {
+        "title": "Modèles Personnalisables",
+        "description": "Adaptez facilement nos modèles à votre image de marque et vos besoins spécifiques avec nos outils de personnalisation avancés."
+      },
+      "installation": {
+        "title": "Installation Rapide",
+        "description": "Mise en place en 2-3 jours ouvrés avec configuration complète, formation et support technique inclus."
+      },
+      "design": {
+        "title": "Design Premium",
+        "description": "Interfaces élégantes et responsive conçues selon les dernières tendances UX/UI pour une expérience utilisateur exceptionnelle."
+      }
+    },
+    "modal": {
+      "mainFeatures": "Caractéristiques principales",
+      "technologies": "Technologies utilisées",
+      "projectInfo": "Informations projet",
+      "category": "Catégorie",
+      "installTime": "Temps d'installation",
+      "installTimeValue": "2-3 jours ouvrés",
+      "support": "Support inclus",
+      "supportValue": "6 mois gratuits",
+      "customization": "Personnalisation",
+      "customizationValue": "Complète",
+      "close": "Fermer",
+      "empty": {
+        "title": "Aucun modèle trouvé",
+        "description": "Essayez une autre catégorie ou contactez-nous pour un modèle personnalisé."
+      }
+    },
     "preview": "Voir le détail",
     "contact": "Nous contacter",
     "cta": {
-      "title": "Prêt à créer votre site web ?",
+      "title": "Prêt à transformer votre vision en réalité ?",
+      "subtitle": "Transformez votre vision en réalité avec nos modèles professionnels et notre expertise technique.",
       "button": "Commencer maintenant"
     }
   },
