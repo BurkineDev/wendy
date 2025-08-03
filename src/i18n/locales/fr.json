@@ -318,6 +318,11 @@
     "contact": "Contact",
     "followUs": "Suivez-nous", 
     "rights": "Tous droits réservés"
+  },
+  "projectModal": {
+    "technologies": "Technologies utilisées",
+    "keyFeatures": "Fonctionnalités clés",
+    "visitSite": "Visiter le site"
   }
 }
 

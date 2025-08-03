@@ -49,6 +49,7 @@
                   <p class="text-lg text-gray-600 mb-6">{{ project.description }}</p>
                   
                   <h4 class="text-xl font-semibold mb-4">Technologies utilisées</h4>
+                  <h4 class="text-xl font-semibold mb-4">{{ t('projectModal.technologies') }}</h4>
                   <div class="flex flex-wrap gap-2 mb-6">
                     <span 
                       v-for="tech in project.technologies" 
@@ -59,7 +60,7 @@
                     </span>
                   </div>
 
-                  <h4 class="text-xl font-semibold mb-4">Fonctionnalités clés</h4>
+                  <h4 class="text-xl font-semibold mb-4">{{ t('projectModal.keyFeatures') }}</h4>
                   <ul class="list-disc list-inside space-y-2 text-gray-600 mb-6">
                     <li v-for="feature in project.features" :key="feature">
                       {{ feature }}
@@ -70,9 +71,9 @@
                     <a 
                       :href="project.link" 
                       target="_blank"
-                      class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
+                      class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors gap-2"
                     >
-                      Visiter le site
+                      {{ t('projectModal.visitSite') }}
                       <ArrowTopRightOnSquareIcon class="ml-2 h-5 w-5" />
                     </a>
                   </div>
@@ -89,6 +90,9 @@
 <script setup lang="ts">
 import { Dialog, DialogPanel, DialogTitle, TransitionChild, TransitionRoot } from '@headlessui/vue'
 import { XMarkIcon, ArrowTopRightOnSquareIcon } from '@heroicons/vue/24/outline'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 interface Project {
   title: string

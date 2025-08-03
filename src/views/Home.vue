@@ -56,8 +56,8 @@
                       <img src="../assets/images/logo_transparent.png" class="w-16 sm:w-28" alt="logo">
                     </div>
                     <div class="space-y-2">
-                      <div class="h-2 sm:h-3 bg-gray-300 rounded w-20 sm:w-24 mx-auto"></div>
-                      <div class="h-1.5 sm:h-2 bg-gray-200 rounded w-12 sm:w-16 mx-auto"></div>
+                      <div class="h-2 sm:h-3 bg-gray-300 rounded w-24 sm:w-32 mx-auto"></div>
+                      <div class="h-1.5 sm:h-2 bg-gray-200 rounded w-16 sm:w-20 mx-auto"></div>
                     </div>
                   </div>
                 </div>

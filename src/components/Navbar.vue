@@ -107,9 +107,9 @@ const closeMenuAndNavigate = (path: string) => {
           <!-- Language Toggle -->
           <button 
             @click="toggleLanguage"
-            class="px-3 xl:px-4 py-2 text-xs xl:text-sm font-semibold text-gray-600 hover:text-primary border border-gray-200 rounded-full hover:border-primary transition-all duration-200"
+            class="px-3 xl:px-4 py-2 text-xs xl:text-sm font-semibold text-gray-600 hover:text-primary border border-gray-200 rounded-full hover:border-primary transition-all duration-200 bg-white/80 backdrop-blur-sm"
           >
-            {{ locale === 'fr' ? 'EN' : 'FR' }}
+            {{ locale === 'fr' ? '🇺🇸 EN' : '🇫🇷 FR' }}
           </button>
 
           <!-- Contact Button -->
