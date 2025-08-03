@@ -1,0 +1,281 @@
+{
+  "nav": {
+    "accueil": "Accueil",
+    "services": "Services",
+    "contactUs": "Nous Contacter",
+    "models": "Nos Modèles"
+  },
+  "services": {
+    "support": "Support TI",
+    "support_sub":"Une équipe d'experts disponible pour maintenir vos systèmes en bon état de fonctionnement.",
+    "development": "Applications TI", 
+    "development_sub":"Applications web, mobiles et logiciels innovants conçus pour transformer votre vision en réalité.",
+    "graphicDesign": "Design Graphique",
+    "graphicDesign_sub":"Designs créatifs et impactants pour donner vie à votre identité de marque.",
+    "digitalMarketing": "Marketing Digital",
+    "digitalMarketing_sub":"Stratégies marketing digitales sur mesure pour maximiser votre présence en ligne."
+  },
+  "models": {
+    "hero": {
+      "title": "Nos Modèles",
+      "subtitle": "Découvrez une collection de modèles WordPress personnalisables et professionnels. Aucun modèle ne vous convient ? Vous ne voulez pas utiliser WordPress pour vos projets ? Ne vous inquiétez pas, nous avons tout ce qu'il vous faut, contactez nous !",
+      "cta": "Démarrer votre projet",
+      "browse": "Parcourir les modèles",
+      "templates": "Modèles disponibles"
+    },
+    "showcase": {
+      "title": "Les modèles",
+      "subtitle": "Explorez des créations WordPress adaptées aux besoins spécifiques des clients"
+    },
+    "preview": "Voir le détail",
+    "contact": "Nous contacter",
+    "cta": {
+      "title": "Prêt à créer votre site web ?",
+      "button": "Commencer maintenant"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Votre partenaire technologique par excellence !",
+      "subtitle": "Transformez votre présence numérique avec nos solutions innovantes en support technique, développement d'applications, design graphique et marketing digital.",
+      "startProject": "Démarrer votre projet",
+      "discoverServices": "Découvrir nos services"
+    },
+    "solutions": {
+      "title": "Solutions Innovantes",
+      "subtitle": "Découvrez nos services sur mesure pour propulser votre entreprise vers l'excellence numérique !"
+    },
+    "partners": {
+      "title": "Nos Partenaires",
+      "subtitle": "Ils nous ont fait confiance pour la réalisation de leurs projets",
+      "become": "Devenez Notre Partenaire",
+      "adviser": "Rejoignez notre réseau de partenaires de confiance et développez votre entreprise avec nous."
+    },
+    "why": {
+      "title": "Pourquoi Choisir Wendy ?",
+      "subtitle": "Notre expertise et notre engagement font la différence dans votre réussite",
+      "innovation": {
+        "title": "Innovation",
+        "description": "Nous utilisons les dernières technologies pour créer des solutions innovantes qui vous démarquent."
+      },
+      "expertise": {
+        "title": "Expertise", 
+        "description": "Une équipe d'experts passionnés avec plusieurs années d'expérience dans le numérique."
+      },
+      "results": {
+        "title": "Résultats",
+        "description": "Des solutions mesurables et des résultats concrets pour atteindre vos objectifs."
+      }
+    },
+    "testimonials": {
+      "title": "Ce que nos clients disent"
+    },
+    "cta": {
+      "title": "Prêt à transformer votre entreprise ?",
+      "subtitle": "Rejoignez les entreprises qui nous font confiance pour leur transformation numérique",
+      "button": "Commencer maintenant"
+    }
+  },
+  "appDevelopment" :{
+    "hero":{
+      "title":"Applications TI",
+      "subtitle":"Des applications web personnalisées, des logiciels et des applications mobiles construits avec des technologies modernes. Nous créons des solutions numériques qui stimulent la croissance des entreprises et améliorent l'engagement des utilisateurs."
+    },
+    "description":{
+      "title":"Nos Services de Développement",
+      "web":{
+        "title":"Sites Web Responsifs",
+        "description":"Création de sites web modernes, adaptés à tous les écrans et optimisés pour les performances"
+      },
+      "mobile":{
+        "title":"Applications Mobiles",
+        "description":"Développement d'applications iOS et Android performantes et intuitives."
+      },
+      "software":{
+        "title":"Logiels",
+        "description":"Développement de logiciels complexes et évolutifs pour votre entreprise."
+      },
+      "techno":{
+        "title":"Technologies de Pointe",
+        "front":"Front-end Moderne",
+        "back":"Back-end Robuste",
+        "bd":"Base de Données"
+      },
+      "process":{
+        "title":"Notre Processus de Développement",
+        "step1":"Analyse",
+        "step1_desc":"Compréhension approfondie de vos besoins et objectifs.",
+        "step2":"Design",
+        "step2_desc":"Création d'interfaces intuitives et esthétiques.",
+        "step3":"Développement",
+        "step3_desc":"Codage et tests rigoureux de votre solution.",
+        "step4":"Déploiement",
+        "step4_desc":"Mise en production et support continu.",
+        "cta":"Prêt à Concrétiser Votre Projet ?",
+        "cta_button":"Discuter de votre Projet"
+      }
+    }
+  },
+  "technicalSupport" :{
+    "hero":{
+      "title":"Support TI",
+      "subtitle":"Assistance technique professionnelle, dépannage pour tous vos besoins informatiques."
+    },
+    "description":{
+      "title":"Nos Services de Support",
+      "audtroubleshootit":{
+        "title":"Dépannage",
+        "description":"Dépannage matériel et logiciel, résolution de problèmes d'écran bleu/noir et problèmes de connectivité."
+      },
+      "security":{
+        "title":"Optimisation",
+        "description":"Installation et configuration de systèmes d'exploitation, de logiciels et périphériques matériels, activation Windows."
+      },
+      "data":{
+        "title":"Protection de données",
+        "description":"Sauvegarde et restauration de vos données, sécurisation de vos systèmes."
+      },
+      "techno":{
+        "title":"Pourquoi Choisir Notre Expertise ?",
+        "team":"Équipe d'experts",
+        "speed":"Rapidité d'intervention",
+        "solution":"Solutions sécurisées"
+      },
+      "process":{
+        "cta":"Rencontrez vous des problèmes informatiques ?",
+        "cta_button":"Contactez nous"
+      }
+    }
+  },
+  "marketing" :{
+    "hero":{
+      "title":"Marketing Digital",
+      "subtitle":"Boostez votre présence en ligne avec nos stratégies marketing innovantes. Atteignez vos objectifs avec des solutions sur mesure."
+    },
+    "description":{
+      "title":"Nos Services Marketing",
+      "seo":{
+        "title":"SEO & SEM",
+        "description":"Optimisation pour les moteurs de recherche et campagnes publicitaires ciblées."
+      },
+      "social":{
+        "title":"Réseaux Sociaux",
+        "description":"Gestion de communauté et stratégies de contenu engageant sur les réseaux sociaux."
+      },
+      "email":{
+        "title":"Courriel Marketing",
+        "description":"Campagnes d'envoi de courriels personnalisés et automatisation marketing."
+      },
+      "techno":{
+        "title":"Notre Approche Marketing",
+        "analyze":"Analyse des Données",
+        "strategy":"Stratégie Personnalisée",
+        "optimyze":"Optimisation Continue"
+      },
+      "process":{
+        "cta":"Prêt à Booster Votre Présence En Ligne ?",
+        "cta_button":"Demander un Audit Gratuit"
+      }
+    }
+  },
+  "graphicDesign" :{
+    "hero":{
+      "title":"Design Graphique",
+      "subtitle":"Solutions visuelles créatives qui capturent l'essence de votre marque et communiquent votre message efficacement. Des logos aux identités de marque complètes, nous donnons vie à votre vision."
+    },
+    "description":{
+      "title":"Nos Services de Design",
+      "identity":{
+        "title":"Identité de Marque",
+        "description":"Création de logos, chartes graphiques et identités visuelles complètes pour votre marque."
+      },
+      "design":{
+        "title":"Design Marketing",
+        "description":"Supports marketing impactants : brochures, flyers, bannières publicitaires et posts sociaux."
+      },
+      "ux":{
+        "title":"Design UI/UX",
+        "description":"Interfaces utilisateur modernes et intuitives pour vos applications web et mobile."
+      },
+      "techno":{
+        "approach":"Notre approche",
+        "design_clean":"Design épuré",
+        "tools":"Outils modernes",
+        "optimyze":"Optimisation continue",
+        "title":"Notre Processus Créatif",
+        "analyze":"Découverte",
+        "analyze_sub":"Analyse de vos besoins et objectifs créatifs.",
+        "conception":"Conception",
+        "conception_sub":"Création de concepts et direction artistique.",
+        "realize":"Optimisation Continue",
+        "realize_sub":"Production des designs et ajustements.",
+        "delivery":"Livraison",
+        "delivery_sub":"Finalisation et remise des fichiers optimisés."
+      },
+      "process":{
+        "cta":"Prêt à Donner Vie à Vos Idées ?",
+        "cta_button":"Commencer un Projet"
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contactez nous",
+      "subtitle": "Notre équipe est à votre écoute pour vous accompagner dans tous vos projets numériques."
+    },
+    "form": {
+      "title": "Envoyez-nous un message",
+      "name": "Nom complet",
+      "namePlaceholder": "Votre nom",
+      "email": "Email",
+      "emailPlaceholder": "votre_email",
+      "subject": "Sujet",
+      "subjectPlaceholder": "Sélectionnez un sujet",
+      "message": "Message", 
+      "messagePlaceholder": "Votre message...",
+      "newsletter": "Je souhaite recevoir la newsletter de Wendy",
+      "send": "Envoyer le message"
+    },
+    "info": {
+      "title": "Restons en Contact",
+      "subtitle": "Nous sommes là pour répondre à vos questions et vous accompagner dans vos projets. N'hésitez pas à nous contacter !",
+      "phone": "Téléphone",
+      "email": "Email",
+      "hours": {
+        "title": "Horaires",
+        "weekdays": "Lundi - Vendredi : 9h - 18h",
+        "support": "Support rapide pour nos clients"
+      },
+      "social": "Suivez-nous"
+    },
+    "faq": {
+      "title": "Questions Fréquentes", 
+      "subtitle": "Trouvez rapidement les réponses à vos questions",
+      "questions": {
+        "response": {
+          "title": "Quel est le délai de réponse ?",
+          "answer": "Nous nous engageons à répondre à toutes les demandes sous 24h ouvrées."
+        },
+        "process": {
+          "title": "Comment se déroule un projet ?", 
+          "answer": "Après votre contact, nous organisons un premier rendez-vous pour comprendre vos besoins et définir ensemble les étapes du projet."
+        },
+        "pricing": {
+          "title": "Quels sont vos tarifs ?",
+          "answer": "Chaque projet étant unique, nos tarifs sont adaptés à vos besoins spécifiques. Contactez-nous pour un devis personnalisé."
+        },
+        "support": {
+          "title": "Proposez-vous un support après-projet ?",
+          "answer": "Oui, nous offrons un support continu et des services de maintenance pour tous nos clients."
+        }
+      }
+    }
+  },
+  "footer": {
+    "services": "Nos Services",
+    "contact": "Contact",
+    "followUs": "Suivez-nous", 
+    "rights": "Tous droits réservés"
+  }
+}
+

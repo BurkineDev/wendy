@@ -1,0 +1,282 @@
+{
+  "nav": {
+    "accueil": "Home",
+    "services": "Services", 
+    "contactUs": "Contact Us",
+    "models": "Our Templates"
+  },
+  "services": {
+    "support": "Technical Support",
+    "support_sub":"Our dedicated team provides comprehensive technical support solutions for you sytems.",
+    "development": "App Development", 
+    "development_sub":"Cutting-edge webapps, mobile apps and desktop apps designed to turn your vision into reality.",
+    "graphicDesign": "Graphic Design",
+    "graphicDesign_sub":"Creative, impactful designs to bring your brand identity to life.",
+    "digitalMarketing": "Digital Marketing",
+    "digitalMarketing_sub":"Custom digital marketing strategies to maximize your business growth."
+  },
+  "models": {
+    "hero": {
+      "title": "Our Templates",
+      "subtitle": "Discover a collection of professional and customizable WordPress templates. No template suits you? Don't want to use WordPress for your projects? Don't worry, we've got everything you need - just contact us!",
+      "cta": "Start Your Project",
+      "browse": "Browse templates",
+      "templates": "Available templates"
+    },
+    "showcase": {
+      "title": "Templates",
+      "subtitle": "Explore WordPress creations tailored to customers specific needs"
+    },
+    "preview": "View details",
+    "contact": "Contact us",
+    "cta": {
+      "title": "Ready to create your website ?",
+      "button": "Start Now"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Your trusted technology partner !",
+      "subtitle": "Transform your digital presence with our innovative solutions in technical support, application development, graphic design and digital marketing.",
+      "startProject": "Start your project",
+      "discoverServices": "Discover our services"
+    },
+    "solutions": {
+      "title": "Innovative Solutions",
+      "subtitle": "Discover our tailored services to propel your business towards digital excellence"
+    },
+    "partners": {
+      "title": "Our Partners",
+      "subtitle": "They have trusted us for their projects",
+      "become": "Become Our Partner",
+      "adviser": "Join our network of trusted partners and grow your business with us."
+    },
+    "why": {
+      "title": "Why Choose Wendy?",
+      "subtitle": "Our expertise and commitment make the difference in your success",
+      "innovation": {
+        "title": "Innovation",
+        "description": "We use the latest technologies to create innovative solutions that set you apart."
+      },
+      "expertise": {
+        "title": "Expertise",
+        "description": "A team of passionate experts with many years of experience in the digital sector."
+      },
+      "results": {
+        "title": "Results",
+        "description": "Measurable solutions and concrete results to achieve your goals."
+      }
+    },
+    "testimonials": {
+      "title": "What our clients say"
+    },
+    "cta": {
+      "title": "Ready to transform your business?",
+      "subtitle": "Join the companies that trust us for their digital transformation",
+      "button": "Get Started Now"
+    }
+  },
+  "appDevelopment" :{
+    "hero":{
+      "title":"App development",
+      "subtitle":"Custom, responsive web applications, desktop and mobile apps built with modern technologies. We create digital solutions that drive business growth and improve user engagement."
+    },
+    "description":{
+      "title":"Our Development Services",
+      "web":{
+        "title":"Responsive Websites",
+        "description":"Ccreation of modern websites, adapted to all screens and optimized for performance"
+      },
+      "mobile":{
+        "title":"Mobile Apps",
+        "description":"Development of high-performance, intuitive iOS and Android applications."
+      },
+      "software":{
+        "title":"Software",
+        "description":"Complex, scalable software development for your business."
+      },
+      "techno":{
+        "title":"Cutting-edge technologies",
+        "front":"Modern front-end",
+        "back":"Robust back-end",
+        "bd":"Database"
+      },
+      "process":{
+        "title":"Our Development Process",
+        "step1":"Analyse",
+        "step1_desc":"In-depth understanding of your needs and objectives.",
+        "step2":"Design",
+        "step2_desc":"Creation of intuitive, aesthetic interfaces.",
+        "step3":"Development",
+        "step3_desc":"Rigorous coding and testing of your solution.",
+        "step4":"Deployment",
+        "step4_desc":"Production start-up and post production support.",
+        "cta":"Ready to make your project a reality ?",
+        "cta_button":"Let's talk about your project"
+      }
+    }
+  },
+  "technicalSupport" :{
+    "hero":{
+      "title":"Technical Support",
+      "subtitle":"Professional technical assistance, troubleshooting for all your IT needs."
+    },
+    "description":{
+      "title":"Our Support Services",
+      "audtroubleshootit":{
+        "title":"Troubleshooting",
+        "description":"Hardware and software troubleshooting, solving blue/black screen and connectivity problems."
+      },
+      "security":{
+        "title":"Optimization",
+        "description":"Installation and configuration of operating systems, software and hardware peripherals, Windows activation."
+      },
+      "data":{
+        "title":"Data protection",
+        "description":"Backup and restore your data, secure your systems."
+      },
+      "techno":{
+        "title":"Why choose our expertise ?",
+        "team":"Team of experts",
+        "speed":"Rapid intervention",
+        "solution":"Secure solutions"
+      },
+      "process":{
+        "cta":"Are you experiencing computer problems ?",
+        "cta_button":"Contact us"
+      }
+    }
+  },
+  "marketing" :{
+    "hero":{
+      "title":"Digital Marketing",
+      "subtitle":"Boost your online presence with our innovative marketing strategies. Achieve your goals with customized solutions."
+    },
+    "description":{
+      "title":"Our Marketing Services",
+      "seo":{
+        "title":"SEO & SEM",
+        "description":"Search engine optimization and targeted advertising campaigns."
+      },
+      "social":{
+        "title":"Social Networks",
+        "description":"Community management and engaging content strategies on social networks."
+      },
+      "email":{
+        "title":"Email Marketing",
+        "description":"Personalized email campaigns and marketing automation."
+      },
+      "techno":{
+        "title":"Our marketing approach",
+        "analyze":"Data analysis",
+        "strategy":"Customized strategy",
+        "optimyze":"Continuous Optimization"
+      },
+      "process":{
+        "cta":"Ready to Boost Your Online Presence ?",
+        "cta_button":"Request a Free Audit"
+      }
+    }
+  },
+  "graphicDesign" :{
+    "hero":{
+      "title":"Graphic Design",
+      "subtitle":"Creative visual solutions that capture the essence of your brand and communicate your message effectively. From logos to complete brand identities, we bring your vision to life."
+    },
+    "description":{
+      "title":"Our Design Services",
+      "identity":{
+        "title":"Brand Identity",
+        "description":"Creation of logos, graphic charters and complete visual identities for your brand."
+      },
+      "design":{
+        "title":"Design Marketing",
+        "description":"High-impact marketing materials: brochures, flyers, banner ads and social posts."
+      },
+      "ux":{
+        "title":"UI/UX Design",
+        "description":"Modern, intuitive user interfaces for your web and mobile applications."
+      },
+      "techno":{
+        "approach":"Our approach",
+        "design_clean":"Streamlined design",
+        "tools":"Modern tools",
+        "optimyze":"Continuous optimization",
+        "title":"Our Creative Process",
+        "analyze":"Discovery",
+        "analyze_sub":"Analysis of your creative needs and objectives.",
+        "conception":"Concept",
+        "conception_sub":"Concept creation and art direction.",
+        "realize":"Continuous Optimization",
+        "realize_sub":"Production of designs and adjustments.",
+        "delivery":"Delivery",
+        "delivery_sub":"Finalization and delivery of optimized files."
+      },
+      "process":{
+        "cta":"Ready to bring your ideas to life ?",
+        "cta_button":"Start a Project"
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact us",
+      "subtitle": "Our team is here to support you in all your digital projects"
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Full name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your_email",
+      "subject": "Subject",
+      "subjectPlaceholder": "Select a subject",
+      "message": "Message",
+      "messagePlaceholder": "Your message...",
+      "newsletter": "I want to receive Wendy's newsletter",
+      "send": "Send message"
+    },
+    "info":  {
+      "title": "Let's Stay in Touch",
+      "subtitle": "We're here to answer your questions and support you in your projects. Don't hesitate to contact us!",
+      "phone": "Phone",
+      "email": "Email", 
+      "hours": {
+        "title": "Hours",
+        "weekdays": "Monday - Friday: 9am - 6pm",
+        "support": "Fast Support for our clients"
+      },
+      "social": "Follow us"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Find quick answers to your questions",
+      "questions": {
+        "response": {
+          "title": "What is the response time?",
+          "answer": "We commit to responding to all requests within 24 business hours."
+        },
+        "process": {
+          "title": "How does a project work?",
+          "answer": "After your contact, we organize an initial meeting to understand your needs and define the project steps together."
+        },
+        "pricing": {
+          "title": "What are your rates?", 
+          "answer": "Each project being unique, our rates are adapted to your specific needs. Contact us for a personalized quote."
+        },
+        "support": {
+          "title": "Do you offer post-project support?",
+          "answer": "Yes, we offer continuous support and maintenance services for all our clients."
+        }
+      }
+    }
+  },
+  "footer": {
+    "services": "Our Services",
+    "contact": "Contact", 
+    "followUs": "Follow us",
+    "rights": "All rights reserved"
+  }
+}
+
+

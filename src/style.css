@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #ed7d32;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-gray-800;
+  background-image: url('/src/assets/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Animations globales */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Classes utilitaires */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.6s ease-out forwards;
+}
+
+/* Boutons */
+.btn-primary {
+  @apply relative overflow-hidden bg-gradient-to-r from-primary to-orange-600 text-white px-8 py-4 rounded-xl font-semibold 
+         transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0;
+}
+
+.btn-primary::before {
+  @apply content-[''] absolute inset-0 bg-white/20 translate-x-[-100%] skew-x-[-15deg] transition-transform duration-500;
+}
+
+.btn-primary:hover::before {
+  @apply translate-x-[100%];
+}
+
+.btn-secondary {
+  @apply relative overflow-hidden bg-white/10 text-white px-8 py-4 rounded-xl font-semibold 
+         backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:shadow-lg;
+}
+
+/* Sections avec fond */
+.section-with-overlay {
+  @apply relative;
+}
+
+.section-with-overlay::before {
+  content: '';
+  @apply absolute inset-0 bg-white/95 backdrop-blur-sm;
+}
+
+/* Titres */
+.section-title {
+  @apply text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-orange-600 mb-8;
+}
+
+.section-subtitle {
+  @apply text-xl text-gray-600 mb-12 max-w-3xl mx-auto;
+}
+
+/* Cards */
+.feature-card {
+  @apply relative overflow-hidden bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl 
+         transition-all duration-300 border border-gray-100 hover:border-primary/20;
+}
+
+.feature-card::before {
+  @apply content-[''] absolute inset-0 bg-gradient-to-br from-primary/5 to-orange-500/5 
+         opacity-0 transition-opacity duration-300;
+}
+
+.feature-card:hover::before {
+  @apply opacity-100;
+}
+
+/* Navigation */
+.nav-link {
+  @apply relative text-gray-600 hover:text-primary transition-colors duration-300 font-medium;
+}
+
+.nav-link::after {
+  @apply content-[''] absolute bottom-0 left-0 w-full h-0.5 bg-primary transform scale-x-0 
+         transition-transform duration-300 origin-left;
+}
+
+.nav-link:hover::after {
+  @apply scale-x-100;
+}
+
+.nav-link.active {
+  @apply text-primary font-semibold;
+}
+
+/* Glassmorphism */
+.glass {
+  @apply bg-white/80 backdrop-blur-md;
+}
+
+/* Gradients */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-orange-600;
+}
+
+.gradient-bg {
+  @apply bg-gradient-to-r from-primary to-orange-600;
+}
+
+/* Hover Effects */
+.hover-lift {
+  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+}
+
+.hover-scale {
+  @apply transition-all duration-300 hover:scale-105;
+}
+
+/* Sections */
+.section {
+  @apply py-20 relative;
+}
+
+.section::before {
+  content: '';
+  @apply absolute inset-0 bg-white/95;
+}
+
+.section-inner {
+  @apply relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Images */
+.img-gradient {
+  @apply relative overflow-hidden rounded-2xl;
+}
+
+.img-gradient::after {
+  @apply content-[''] absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 
+         transition-opacity duration-300;
+}
+
+.img-gradient:hover::after {
+  @apply opacity-100;
+}
+
+/* Scroll Animations */
+[data-aos] {
+  @apply opacity-0 transition-opacity duration-500;
+}
+
+[data-aos].aos-animate {
+  @apply opacity-100;
+}
+
+/* Forms */
+.input-primary {
+  @apply w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary 
+         focus:border-primary transition-all;
+}
+
+.select-primary {
+  @apply w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary 
+         focus:border-primary transition-all;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/50 rounded-full hover:bg-primary;
+}
