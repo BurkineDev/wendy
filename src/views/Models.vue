@@ -470,9 +470,8 @@
 
                           <button 
                             @click="closePreview"
-                            class="w-full px-6 py-4 bg-gray-100 hover:bg-gray-200 text-gray-700 hover:text-gray-900 font-semibold rounded-xl transition-all duration-300"
-                              {{ t('models.modal.close') }}
-                            Fermer
+                            class="w-full px-6 py-4 bg-gray-100 hover:bg-gray-200 text-gray-700 hover:text-gray-900 font-semibold rounded-xl transition-all duration-300">
+                            {{ t('models.modal.close') }}
                           </button>
                         </div>
                       </div>
