@@ -142,7 +142,7 @@ const closeMenuAndNavigate = (path: string) => {
       <div v-if="isOpen" class="lg:hidden bg-white shadow-lg">
         <div class="pt-4 pb-6 px-4 sm:px-5 space-y-2">
           <router-link
-            v-for="item in navigation"
+            v-for="item in navigation.value"
             :key="item.name"
             :to="item.path"
             class="block px-4 py-3 text-sm sm:text-base font-semibold rounded-lg hover:bg-gray-50 hover:text-primary transition-all duration-200"
@@ -157,7 +157,7 @@ const closeMenuAndNavigate = (path: string) => {
             <div class="text-xs sm:text-sm font-semibold text-gray-500 mb-3">{{ t('nav.services') }}</div>
             <div class="space-y-1">
               <router-link
-                v-for="service in services"
+                v-for="service in services.value"
                 :key="service.name"
                 :to="service.path"
                 class="block px-4 py-2 sm:py-3 text-xs sm:text-sm font-medium rounded-lg hover:bg-gray-50 hover:text-primary transition-all duration-200"

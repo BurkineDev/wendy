@@ -275,7 +275,8 @@
       "message": "Message", 
       "messagePlaceholder": "Votre message...",
       "newsletter": "Je souhaite recevoir la newsletter de Wendy",
-      "send": "Envoyer le message"
+      "send": "Envoyer le message",
+      "other": "Autre"
     },
     "info": {
       "title": "Restons en Contact",
