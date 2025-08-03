@@ -50,7 +50,7 @@ body {
 
 /* Boutons */
 .btn-primary {
-  @apply relative overflow-hidden bg-gradient-to-r from-primary to-orange-600 text-white px-8 py-4 rounded-xl font-semibold 
+  @apply relative overflow-hidden bg-gradient-to-r from-primary to-orange-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold 
          transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0;
 }
 
@@ -63,7 +63,7 @@ body {
 }
 
 .btn-secondary {
-  @apply relative overflow-hidden bg-white/10 text-white px-8 py-4 rounded-xl font-semibold 
+  @apply relative overflow-hidden bg-white/10 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold 
          backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:shadow-lg;
 }
 
@@ -79,16 +79,16 @@ body {
 
 /* Titres */
 .section-title {
-  @apply text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-orange-600 mb-8;
+  @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-orange-600 mb-6 sm:mb-8;
 }
 
 .section-subtitle {
-  @apply text-xl text-gray-600 mb-12 max-w-3xl mx-auto;
+  @apply text-base sm:text-lg lg:text-xl text-gray-600 mb-8 sm:mb-12 max-w-3xl mx-auto px-4;
 }
 
 /* Cards */
 .feature-card {
-  @apply relative overflow-hidden bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl 
+  @apply relative overflow-hidden bg-white/90 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl 
          transition-all duration-300 border border-gray-100 hover:border-primary/20;
 }
 
@@ -144,7 +144,7 @@ body {
 
 /* Sections */
 .section {
-  @apply py-20 relative;
+  @apply py-12 sm:py-16 lg:py-20 relative;
 }
 
 .section::before {
@@ -181,18 +181,18 @@ body {
 
 /* Forms */
 .input-primary {
-  @apply w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary 
+  @apply w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary 
          focus:border-primary transition-all;
 }
 
 .select-primary {
-  @apply w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary 
+  @apply w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary 
          focus:border-primary transition-all;
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  @apply w-2;
+  @apply w-1 sm:w-2;
 }
 
 ::-webkit-scrollbar-track {
@@ -201,4 +201,44 @@ body {
 
 ::-webkit-scrollbar-thumb {
   @apply bg-primary/50 rounded-full hover:bg-primary;
+}
+
+/* Responsive utilities */
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+}
+
+/* Text responsive utilities */
+.text-responsive-xs {
+  @apply text-xs sm:text-sm;
+}
+
+.text-responsive-sm {
+  @apply text-sm sm:text-base;
+}
+
+.text-responsive-base {
+  @apply text-base sm:text-lg;
+}
+
+.text-responsive-lg {
+  @apply text-lg sm:text-xl;
+}
+
+.text-responsive-xl {
+  @apply text-xl sm:text-2xl;
+}
+
+.text-responsive-2xl {
+  @apply text-2xl sm:text-3xl;
+}
+
+.text-responsive-3xl {
+  @apply text-2xl sm:text-3xl lg:text-4xl;
+}
+
+.text-responsive-4xl {
+  @apply text-3xl sm:text-4xl lg:text-5xl;
 }

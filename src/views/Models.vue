@@ -1,114 +1,114 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="relative py-20 bg-gradient-to-r from-orange-400 via-orange-500 to-blue-600">
+    <section class="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-orange-400 via-orange-500 to-blue-600">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="relative z-10 text-center md:text-left md:flex md:items-center md:justify-between">
-          <div class="md:w-1/2" data-aos="fade-right">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+        <div class="relative z-10 text-center lg:text-left lg:flex lg:items-center lg:justify-between">
+          <div class="lg:w-1/2" data-aos="fade-right">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
               {{ t('models.hero.title') }}
             </h1>
-            <p class="text-xl text-white mb-8">
+            <p class="text-base sm:text-lg lg:text-xl text-white mb-6 sm:mb-8 px-4 lg:px-0">
               {{ t('models.hero.subtitle') }}
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
               <router-link 
                 to="/contact" 
-                class="btn-primary inline-flex items-center justify-center">
+                class="btn-primary inline-flex items-center justify-center text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">
                 {{ t('models.hero.cta') }}
                 <ArrowRightIcon class="ml-2 h-5 w-5" />
               </router-link>
               <button 
                 @click="scrollToModels"
-                class="inline-flex items-center justify-center px-6 py-3 bg-white/10 text-white rounded-lg hover:bg-white/20 transition-all duration-300">
+                class="inline-flex items-center justify-center px-4 sm:px-6 py-2 sm:py-3 bg-white/10 text-white rounded-lg hover:bg-white/20 transition-all duration-300 text-sm sm:text-base">
                 {{ t('models.hero.browse') }}
                 <ChevronDownIcon class="ml-2 h-5 w-5 animate-bounce" />
               </button>
             </div>
           </div>
-          <div class="hidden md:block md:w-1/2" data-aos="fade-left">
-            <div class="relative h-96 perspective-1000">
+          <div class="hidden lg:block lg:w-1/2 mt-8 lg:mt-0" data-aos="fade-left">
+            <div class="relative h-64 sm:h-80 lg:h-96 perspective-1000">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 rounded-3xl"></div>
               
-              <div class="absolute top-8 left-8 w-48 h-32 bg-white rounded-lg shadow-2xl transform rotate-3 hover:rotate-6 transition-transform duration-500">
-                <div class="p-3 h-full">
-                  <div class="h-3 bg-gradient-to-r from-blue-400 to-blue-600 rounded mb-2"></div>
+              <div class="absolute top-4 sm:top-8 left-4 sm:left-8 w-32 sm:w-40 lg:w-48 h-20 sm:h-24 lg:h-32 bg-white rounded-lg shadow-2xl transform rotate-3 hover:rotate-6 transition-transform duration-500">
+                <div class="p-2 sm:p-3 h-full">
+                  <div class="h-2 sm:h-3 bg-gradient-to-r from-blue-400 to-blue-600 rounded mb-1 sm:mb-2"></div>
                   <div class="space-y-1">
-                    <div class="h-2 bg-gray-200 rounded w-full"></div>
-                    <div class="h-2 bg-gray-200 rounded w-4/5"></div>
-                    <div class="h-2 bg-gray-200 rounded w-3/5"></div>
+                    <div class="h-1 sm:h-2 bg-gray-200 rounded w-full"></div>
+                    <div class="h-1 sm:h-2 bg-gray-200 rounded w-4/5"></div>
+                    <div class="h-1 sm:h-2 bg-gray-200 rounded w-3/5"></div>
                   </div>
-                  <div class="mt-3 grid grid-cols-2 gap-1">
-                    <div class="h-8 bg-gray-100 rounded"></div>
-                    <div class="h-8 bg-gray-100 rounded"></div>
+                  <div class="mt-2 sm:mt-3 grid grid-cols-2 gap-1">
+                    <div class="h-4 sm:h-6 lg:h-8 bg-gray-100 rounded"></div>
+                    <div class="h-4 sm:h-6 lg:h-8 bg-gray-100 rounded"></div>
                   </div>
                 </div>
               </div>
 
-              <div class="absolute top-4 right-12 w-52 h-36 bg-white rounded-lg shadow-2xl transform -rotate-2 hover:-rotate-6 transition-transform duration-500">
-                <div class="p-3 h-full">
-                  <div class="h-3 bg-gradient-to-r from-green-400 to-emerald-600 rounded mb-2"></div>
+              <div class="absolute top-2 sm:top-4 right-6 sm:right-12 w-36 sm:w-44 lg:w-52 h-24 sm:h-28 lg:h-36 bg-white rounded-lg shadow-2xl transform -rotate-2 hover:-rotate-6 transition-transform duration-500">
+                <div class="p-2 sm:p-3 h-full">
+                  <div class="h-2 sm:h-3 bg-gradient-to-r from-green-400 to-emerald-600 rounded mb-1 sm:mb-2"></div>
                   <div class="grid grid-cols-3 gap-1 mb-2">
-                    <div class="h-6 bg-gray-200 rounded"></div>
-                    <div class="h-6 bg-gray-200 rounded"></div>
-                    <div class="h-6 bg-gray-200 rounded"></div>
+                    <div class="h-3 sm:h-4 lg:h-6 bg-gray-200 rounded"></div>
+                    <div class="h-3 sm:h-4 lg:h-6 bg-gray-200 rounded"></div>
+                    <div class="h-3 sm:h-4 lg:h-6 bg-gray-200 rounded"></div>
                   </div>
                   <div class="space-y-1">
-                    <div class="h-2 bg-gray-100 rounded"></div>
-                    <div class="h-2 bg-gray-100 rounded w-4/5"></div>
+                    <div class="h-1 sm:h-2 bg-gray-100 rounded"></div>
+                    <div class="h-1 sm:h-2 bg-gray-100 rounded w-4/5"></div>
                   </div>
-                  <div class="mt-2 h-6 bg-gradient-to-r from-green-200 to-emerald-200 rounded"></div>
+                  <div class="mt-1 sm:mt-2 h-3 sm:h-4 lg:h-6 bg-gradient-to-r from-green-200 to-emerald-200 rounded"></div>
                 </div>
               </div>
 
-              <div class="absolute bottom-8 left-16 w-44 h-28 bg-white rounded-lg shadow-2xl transform rotate-1 hover:rotate-3 transition-transform duration-500">
-                <div class="p-3 h-full">
-                  <div class="h-3 bg-gradient-to-r from-purple-400 to-pink-600 rounded mb-2"></div>
+              <div class="absolute bottom-4 sm:bottom-8 left-8 sm:left-16 w-32 sm:w-36 lg:w-44 h-18 sm:h-20 lg:h-28 bg-white rounded-lg shadow-2xl transform rotate-1 hover:rotate-3 transition-transform duration-500">
+                <div class="p-2 sm:p-3 h-full">
+                  <div class="h-2 sm:h-3 bg-gradient-to-r from-purple-400 to-pink-600 rounded mb-1 sm:mb-2"></div>
                   <div class="grid grid-cols-2 gap-1 mb-1">
-                    <div class="h-8 bg-gray-200 rounded"></div>
-                    <div class="h-8 bg-gray-200 rounded"></div>
+                    <div class="h-4 sm:h-6 lg:h-8 bg-gray-200 rounded"></div>
+                    <div class="h-4 sm:h-6 lg:h-8 bg-gray-200 rounded"></div>
                   </div>
-                  <div class="h-4 bg-gray-300 rounded"></div>
+                  <div class="h-2 sm:h-3 lg:h-4 bg-gray-300 rounded"></div>
                 </div>
               </div>
 
-              <div class="absolute bottom-12 right-8 w-44 h-28 bg-white rounded-lg shadow-2xl transform -rotate-1 hover:-rotate-4 transition-transform duration-500">
-                <div class="p-3 h-full">
-                  <div class="h-3 bg-gradient-to-r from-orange-400 to-red-600 rounded mb-2"></div>
+              <div class="absolute bottom-6 sm:bottom-12 right-4 sm:right-8 w-32 sm:w-36 lg:w-44 h-18 sm:h-20 lg:h-28 bg-white rounded-lg shadow-2xl transform -rotate-1 hover:-rotate-4 transition-transform duration-500">
+                <div class="p-2 sm:p-3 h-full">
+                  <div class="h-2 sm:h-3 bg-gradient-to-r from-orange-400 to-red-600 rounded mb-1 sm:mb-2"></div>
                   <div class="grid grid-cols-2 gap-1 mb-2">
-                    <div class="h-10 bg-gray-200 rounded"></div>
-                    <div class="h-10 bg-gray-200 rounded"></div>
+                    <div class="h-6 sm:h-8 lg:h-10 bg-gray-200 rounded"></div>
+                    <div class="h-6 sm:h-8 lg:h-10 bg-gray-200 rounded"></div>
                   </div>
                   <div class="grid grid-cols-3 gap-1">
-                    <div class="h-6 bg-gray-200 rounded"></div>
-                    <div class="h-6 bg-gray-200 rounded"></div>
-                    <div class="h-6 bg-gray-200 rounded"></div>
+                    <div class="h-3 sm:h-4 lg:h-6 bg-gray-200 rounded"></div>
+                    <div class="h-3 sm:h-4 lg:h-6 bg-gray-200 rounded"></div>
+                    <div class="h-3 sm:h-4 lg:h-6 bg-gray-200 rounded"></div>
                   </div>
                 </div>
               </div>
 
-              <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-56 h-40 bg-white rounded-xl shadow-2xl border-2 border-gray-100">
-                <div class="p-4 h-full">
-                  <div class="h-4 bg-gradient-to-r from-indigo-500 to-purple-600 rounded mb-3"></div>
-                  <div class="space-y-2 mb-3">
-                    <div class="h-2 bg-gray-200 rounded"></div>
-                    <div class="h-2 bg-gray-200 rounded w-5/6"></div>
-                    <div class="h-2 bg-gray-200 rounded w-4/6"></div>
+              <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 sm:w-48 lg:w-56 h-28 sm:h-32 lg:h-40 bg-white rounded-xl shadow-2xl border-2 border-gray-100">
+                <div class="p-3 sm:p-4 h-full">
+                  <div class="h-2 sm:h-3 lg:h-4 bg-gradient-to-r from-indigo-500 to-purple-600 rounded mb-2 sm:mb-3"></div>
+                  <div class="space-y-1 sm:space-y-2 mb-2 sm:mb-3">
+                    <div class="h-1 sm:h-2 bg-gray-200 rounded"></div>
+                    <div class="h-1 sm:h-2 bg-gray-200 rounded w-5/6"></div>
+                    <div class="h-1 sm:h-2 bg-gray-200 rounded w-4/6"></div>
                   </div>
                   <div class="grid grid-cols-2 gap-2">
-                    <div class="h-12 bg-gradient-to-br from-blue-100 to-indigo-100 rounded"></div>
-                    <div class="h-12 bg-gradient-to-br from-purple-100 to-pink-100 rounded"></div>
+                    <div class="h-6 sm:h-8 lg:h-12 bg-gradient-to-br from-blue-100 to-indigo-100 rounded"></div>
+                    <div class="h-6 sm:h-8 lg:h-12 bg-gradient-to-br from-purple-100 to-pink-100 rounded"></div>
                   </div>
                 </div>
               </div>
 
-              <div class="absolute top-16 left-1/2 w-4 h-4 bg-blue-400 rounded-full animate-pulse"></div>
-              <div class="absolute bottom-20 left-1/4 w-3 h-3 bg-purple-400 rounded-full animate-pulse delay-300"></div>
-              <div class="absolute top-1/3 right-1/4 w-5 h-5 bg-pink-400 rounded-full animate-pulse delay-700"></div>
+              <div class="absolute top-8 sm:top-16 left-1/2 w-2 sm:w-3 lg:w-4 h-2 sm:h-3 lg:h-4 bg-blue-400 rounded-full animate-pulse"></div>
+              <div class="absolute bottom-10 sm:bottom-20 left-1/4 w-2 sm:w-3 h-2 sm:h-3 bg-purple-400 rounded-full animate-pulse delay-300"></div>
+              <div class="absolute top-1/3 right-1/4 w-3 sm:w-4 lg:w-5 h-3 sm:h-4 lg:h-5 bg-pink-400 rounded-full animate-pulse delay-700"></div>
             </div>
-            <div class="absolute -bottom-6 -right-6 bg-white rounded-lg p-4 shadow-xl">
-              <div class="text-2xl font-bold text-primary">{{ models.length }}+</div>
-              <div class="text-sm text-gray-600">{{ t('models.hero.templates') }}</div>
+            <div class="absolute -bottom-3 sm:-bottom-6 -right-3 sm:-right-6 bg-white rounded-lg p-2 sm:p-4 shadow-xl">
+              <div class="text-lg sm:text-xl lg:text-2xl font-bold text-primary">{{ models.length }}+</div>
+              <div class="text-xs sm:text-sm text-gray-600">{{ t('models.hero.templates') }}</div>
             </div>
           </div>
         </div>
@@ -117,14 +117,14 @@
     </section>
     
     <!-- Categories Section -->
-    <section class="py-12 bg-gray-50">
+    <section class="py-8 sm:py-12 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-wrap justify-center gap-4">
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-4">
           <button
             v-for="category in categories"
             :key="category"
             @click="selectedCategory = category"
-            class="px-6 py-2 rounded-full text-sm font-medium transition-all duration-300"
+            class="px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-medium transition-all duration-300"
             :class="[
               selectedCategory === category 
                 ? 'bg-primary text-white shadow-lg' 
@@ -137,17 +137,17 @@
     </section>
 
     <!-- Models Grid Section -->
-    <section class="py-20 bg-white">
+    <section class="py-12 sm:py-16 lg:py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
+        <div class="text-center mb-12 sm:mb-16">
           <h2 
-            class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+            class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6"
             data-aos="fade-up"
           >
             {{ t('models.showcase.title') }}
           </h2>
           <p 
-            class="text-xl text-gray-600 max-w-3xl mx-auto"
+            class="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -157,7 +157,7 @@
 
         <TransitionGroup
           tag="div"
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
           enter-active-class="transition-all duration-300"
           enter-from-class="opacity-0 scale-95"
           enter-to-class="opacity-100 scale-100"
@@ -180,34 +180,34 @@
                 class="absolute inset-0 w-full h-full object-cover object-center transform transition-transform duration-700 group-hover:scale-110"
               />
               <!-- Category Badge -->
-              <div class="absolute top-4 right-4 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-sm font-medium text-primary shadow-lg">
+              <div class="absolute top-2 sm:top-4 right-2 sm:right-4 px-2 sm:px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs sm:text-sm font-medium text-primary shadow-lg">
                 {{ model.category }}
               </div>
             </div>
 
             <!-- Content Container -->
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors duration-300">
+            <div class="p-4 sm:p-6">
+              <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors duration-300">
                 {{ model.title }}
               </h3>
-              <p class="text-gray-600 mb-4 line-clamp-2 h-12">
+              <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 line-clamp-2 h-10 sm:h-12 leading-relaxed">
                 {{ model.description }}
               </p>
               <div class="flex flex-wrap gap-2 mb-4">
                 <span 
                   v-for="(tech, techIndex) in model.technologies" 
                   :key="techIndex"
-                  class="px-3 py-1 bg-primary/5 rounded-full text-sm font-medium text-primary/80 hover:bg-primary/10 transition-colors duration-300"
+                  class="px-2 sm:px-3 py-1 bg-primary/5 rounded-full text-xs sm:text-sm font-medium text-primary/80 hover:bg-primary/10 transition-colors duration-300"
                 >
                   {{ tech }}
                 </span>
               </div>
               
               <!-- Action Button -->
-              <div class="pt-4 border-t border-gray-100">
+              <div class="pt-3 sm:pt-4 border-t border-gray-100">
                 <button 
                   @click="openPreview(model)"
-                  class="w-full inline-flex items-center justify-center px-6 py-3 bg-gray-50 hover:bg-primary/5 text-primary rounded-lg transition-all duration-300 group"
+                  class="w-full inline-flex items-center justify-center px-4 sm:px-6 py-2 sm:py-3 bg-gray-50 hover:bg-primary/5 text-primary rounded-lg transition-all duration-300 group text-sm sm:text-base"
                 >
                   <span class="font-medium">{{ t('models.preview') }}</span>
                   <ArrowTopRightOnSquareIcon class="ml-2 h-5 w-5 transform transition-transform duration-300 group-hover:translate-x-1" />
@@ -216,19 +216,19 @@
             </div>
 
             <!-- Hover Overlay -->
-            <div class="absolute inset-0 rounded-xl bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none">
-              <div class="absolute inset-0 p-6 flex flex-col justify-end">
-                <h3 class="text-xl font-bold text-white mb-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
+            <div class="absolute inset-0 rounded-xl bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none lg:block hidden">
+              <div class="absolute inset-0 p-4 sm:p-6 flex flex-col justify-end">
+                <h3 class="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
                   {{ model.title }}
                 </h3>
-                <p class="text-gray-200 mb-4 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-100">
+                <p class="text-sm sm:text-base text-gray-200 mb-3 sm:mb-4 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-100 leading-relaxed">
                   {{ model.description }}
                 </p>
                 <div class="flex flex-wrap gap-2 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-200">
                   <span 
                     v-for="(tech, techIndex) in model.technologies" 
                     :key="techIndex"
-                    class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium text-white"
+                    class="px-2 sm:px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs sm:text-sm font-medium text-white"
                   >
                     {{ tech }}
                   </span>
@@ -241,38 +241,39 @@
     </section>
 
     <!-- Features Section -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-12 sm:py-16 lg:py-20 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           <div 
             v-for="(feature, index) in features" 
             :key="index"
-            class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
+            class="bg-white rounded-xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300"
+            :class="{ 'sm:col-span-2 lg:col-span-1': index === 2 && features.length === 3 }"
             data-aos="fade-up"
             :data-aos-delay="index * 100"
           >
-            <div class="h-12 w-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-              <component :is="feature.icon" class="h-6 w-6 text-primary" />
+            <div class="h-10 w-10 sm:h-12 sm:w-12 bg-primary/10 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+              <component :is="feature.icon" class="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
             </div>
-            <h3 class="text-lg font-semibold mb-2">{{ feature.title }}</h3>
-            <p class="text-gray-600">{{ feature.description }}</p>
+            <h3 class="text-base sm:text-lg font-semibold mb-2">{{ feature.title }}</h3>
+            <p class="text-sm sm:text-base text-gray-600 leading-relaxed">{{ feature.description }}</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="bg-gradient-to-r from-orange-500 to-blue-600 py-16">
+    <section class="bg-gradient-to-r from-orange-500 to-blue-600 py-12 sm:py-16">
       <div 
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
         data-aos="fade-up"
       >
-        <h2 class="text-3xl font-bold text-white mb-8">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-6 sm:mb-8 px-4">
           {{ t('models.cta.title') }}
         </h2>
         <router-link 
           to="/contact" 
-          class="inline-flex items-center px-8 py-4 bg-white text-primary font-bold rounded-lg hover:bg-opacity-90 transition-all duration-300"
+          class="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-white text-primary font-bold rounded-lg hover:bg-opacity-90 transition-all duration-300 text-sm sm:text-base"
         >
           {{ t('models.cta.button') }}
           <ArrowRightIcon class="ml-2 h-5 w-5" />
@@ -317,50 +318,50 @@
                   </button>
 
                   <!-- Image Header -->
-                  <div class="relative h-72 w-full overflow-hidden">
+                  <div class="relative h-48 sm:h-64 lg:h-72 w-full overflow-hidden">
                     <img 
                       :src="selectedModel.image" 
                       :alt="selectedModel.title"
                       class="w-full h-full object-cover"
                     />
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-8">
-                      <span class="px-3 py-1 bg-primary text-white text-sm font-medium rounded-full">
+                    <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 lg:p-8">
+                      <span class="px-2 sm:px-3 py-1 bg-primary text-white text-xs sm:text-sm font-medium rounded-full">
                         {{ selectedModel.category }}
                       </span>
-                      <h2 class="text-3xl font-bold text-white mt-3">
+                      <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-white mt-2 sm:mt-3">
                         {{ selectedModel.title }}
                       </h2>
                     </div>
                   </div>
 
                   <!-- Content -->
-                  <div class="p-8">
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  <div class="p-4 sm:p-6 lg:p-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
                       <!-- Main Content -->
-                      <div class="md:col-span-2 space-y-6">
+                      <div class="lg:col-span-2 space-y-4 sm:space-y-6">
                         <div>
-                          <h3 class="text-lg font-semibold text-gray-900 mb-3">Description</h3>
-                          <p class="text-gray-600">{{ selectedModel.description }}</p>
+                          <h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-2 sm:mb-3">Description</h3>
+                          <p class="text-sm sm:text-base text-gray-600 leading-relaxed">{{ selectedModel.description }}</p>
                         </div>
 
                         <div>
-                          <h3 class="text-lg font-semibold text-gray-900 mb-3">Caractéristiques principales</h3>
+                          <h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-2 sm:mb-3">Caractéristiques principales</h3>
                           <ul class="space-y-2">
                             <li v-for="(feature, index) in selectedModel.features" :key="index" class="flex items-start">
-                              <CheckCircleIcon class="h-5 w-5 text-primary mt-0.5 mr-2 flex-shrink-0" />
-                              <span class="text-gray-600">{{ feature }}</span>
+                              <CheckCircleIcon class="h-4 w-4 sm:h-5 sm:w-5 text-primary mt-0.5 mr-2 flex-shrink-0" />
+                              <span class="text-sm sm:text-base text-gray-600">{{ feature }}</span>
                             </li>
                           </ul>
                         </div>
 
                         <div>
-                          <h3 class="text-lg font-semibold text-gray-900 mb-3">Technologies utilisées</h3>
+                          <h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-2 sm:mb-3">Technologies utilisées</h3>
                           <div class="flex flex-wrap gap-2">
                             <span 
                               v-for="tech in selectedModel.technologies" 
                               :key="tech"
-                              class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors"
+                              class="px-2 sm:px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs sm:text-sm font-medium hover:bg-gray-200 transition-colors"
                             >
                               {{ tech }}
                             </span>
@@ -369,28 +370,28 @@
                       </div>
 
                       <!-- Sidebar -->
-                      <div class="space-y-6">
-                        <div class="bg-gray-50 rounded-xl p-6">
-                          <h3 class="text-lg font-semibold text-gray-900 mb-4">Informations</h3>
+                      <div class="space-y-4 sm:space-y-6 mt-6 lg:mt-0">
+                        <div class="bg-gray-50 rounded-xl p-4 sm:p-6">
+                          <h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-3 sm:mb-4">Informations</h3>
                           <dl class="space-y-3">
                             <div>
                               <dt class="text-sm text-gray-500">Catégorie</dt>
-                              <dd class="text-gray-900">{{ selectedModel.category }}</dd>
+                              <dd class="text-sm sm:text-base text-gray-900">{{ selectedModel.category }}</dd>
                             </div>
                             <div>
                               <dt class="text-sm text-gray-500">Temps d'installation</dt>
-                              <dd class="text-gray-900">2-3 jours</dd>
+                              <dd class="text-sm sm:text-base text-gray-900">2-3 jours</dd>
                             </div>
                             <div>
                               <dt class="text-sm text-gray-500">Support inclus</dt>
-                              <dd class="text-gray-900">6 mois</dd>
+                              <dd class="text-sm sm:text-base text-gray-900">6 mois</dd>
                             </div>
                           </dl>
                         </div>
 
                         <router-link 
                           to="/contact" 
-                          class="block w-full px-6 py-3 bg-primary text-white text-center font-semibold rounded-lg hover:bg-primary/90 transition-colors"
+                          class="block w-full px-4 sm:px-6 py-2 sm:py-3 bg-primary text-white text-center font-semibold rounded-lg hover:bg-primary/90 transition-colors text-sm sm:text-base"
                         >
                           {{ t('models.contact') }}
                         </router-link>

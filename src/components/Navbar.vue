@@ -41,20 +41,20 @@ const closeMenuAndNavigate = (path: string) => {
         <div class="flex items-center">
           <router-link 
             to="/" 
-            class="flex items-center gap-3 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-600 hover:opacity-90 transition-opacity duration-200"
+            class="flex items-center gap-2 sm:gap-3 text-xl sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-600 hover:opacity-90 transition-opacity duration-200"
           >
-            <img src="../assets/images/logo_transparent.png" class="w-12 h-12 object-contain" alt="Wendy Logo">
+            <img src="../assets/images/logo_transparent.png" class="w-8 h-8 sm:w-12 sm:h-12 object-contain" alt="Wendy Logo">
             Wendy
           </router-link>
         </div>
         
         <!-- Desktop menu -->
-        <div class="hidden md:flex md:items-center md:space-x-10">
+        <div class="hidden lg:flex lg:items-center lg:space-x-8 xl:space-x-10">
           <router-link
             v-for="item in navigation"
             :key="item.name"
             :to="item.path"
-            class="nav-link relative group py-2 text-base"
+            class="nav-link relative group py-2 text-sm xl:text-base"
             active-class="text-primary font-semibold"
           >
             {{ item.name }}
@@ -63,7 +63,7 @@ const closeMenuAndNavigate = (path: string) => {
 
           <!-- Services Dropdown -->
           <Menu as="div" class="relative">
-            <MenuButton class="nav-link inline-flex items-center group text-base">
+            <MenuButton class="nav-link inline-flex items-center group text-sm xl:text-base">
               {{ t('nav.services') }}
               <ChevronDownIcon class="ml-2 h-5 w-5 transform group-hover:rotate-180 transition-transform duration-300" />
             </MenuButton>
@@ -76,14 +76,14 @@ const closeMenuAndNavigate = (path: string) => {
               leave-from-class="transform scale-100 opacity-100"
               leave-to-class="transform scale-95 opacity-0"
             >
-              <MenuItems class="absolute right-0 mt-3 w-72 origin-top-right rounded-2xl bg-white shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none p-2">
+              <MenuItems class="absolute right-0 mt-3 w-64 xl:w-72 origin-top-right rounded-2xl bg-white shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none p-2">
                 <MenuItem v-for="service in services" :key="service.name">
                   <router-link
                     :to="service.path"
                     class="group flex items-center px-4 py-3 rounded-lg hover:bg-gray-50 transition-all duration-200"
                     @click="isOpen = false"
                   >
-                    <span class="text-sm font-medium group-hover:text-primary transition-colors">{{ service.name }}</span>
+                    <span class="text-xs xl:text-sm font-medium group-hover:text-primary transition-colors">{{ service.name }}</span>
                     <svg 
                       xmlns="http://www.w3.org/2000/svg" 
                       class="h-4 w-4 ml-auto opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-2 transition-all duration-200" 
@@ -102,7 +102,7 @@ const closeMenuAndNavigate = (path: string) => {
           <!-- Language Toggle -->
           <button 
             @click="toggleLanguage"
-            class="px-4 py-2 text-sm font-semibold text-gray-600 hover:text-primary border border-gray-200 rounded-full hover:border-primary transition-all duration-200"
+            class="px-3 xl:px-4 py-2 text-xs xl:text-sm font-semibold text-gray-600 hover:text-primary border border-gray-200 rounded-full hover:border-primary transition-all duration-200"
           >
             {{ locale === 'fr' ? 'EN' : 'FR' }}
           </button>
@@ -110,14 +110,14 @@ const closeMenuAndNavigate = (path: string) => {
           <!-- Contact Button -->
           <router-link 
             to="/contact" 
-            class="px-6 py-3 bg-gradient-to-r from-primary to-orange-600 text-white rounded-full font-semibold text-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            class="px-4 xl:px-6 py-2 xl:py-3 bg-gradient-to-r from-primary to-orange-600 text-white rounded-full font-semibold text-xs xl:text-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
           >
             {{ t('nav.contactUs') }}
           </router-link>
         </div>
 
         <!-- Mobile menu button -->
-        <div class="flex items-center md:hidden">
+        <div class="flex items-center lg:hidden">
           <button
             @click="isOpen = !isOpen"
             class="inline-flex items-center justify-center p-2 rounded-xl text-gray-500 hover:text-primary hover:bg-gray-100 transition-all duration-200"
@@ -139,13 +139,13 @@ const closeMenuAndNavigate = (path: string) => {
       leave-from-class="opacity-100 translate-y-0"
       leave-to-class="opacity-0 -translate-y-2"
     >
-      <div v-if="isOpen" class="md:hidden bg-white shadow-lg">
-        <div class="pt-4 pb-6 px-5 space-y-2">
+      <div v-if="isOpen" class="lg:hidden bg-white shadow-lg">
+        <div class="pt-4 pb-6 px-4 sm:px-5 space-y-2">
           <router-link
             v-for="item in navigation"
             :key="item.name"
             :to="item.path"
-            class="block px-4 py-3 text-base font-semibold rounded-lg hover:bg-gray-50 hover:text-primary transition-all duration-200"
+            class="block px-4 py-3 text-sm sm:text-base font-semibold rounded-lg hover:bg-gray-50 hover:text-primary transition-all duration-200"
             active-class="text-primary bg-gray-50"
             @click="closeMenuAndNavigate(item.path)"
           >
@@ -154,13 +154,13 @@ const closeMenuAndNavigate = (path: string) => {
 
           <!-- Services section in mobile menu -->
           <div class="px-4 py-3">
-            <div class="text-sm font-semibold text-gray-500 mb-3">{{ t('nav.services') }}</div>
+            <div class="text-xs sm:text-sm font-semibold text-gray-500 mb-3">{{ t('nav.services') }}</div>
             <div class="space-y-1">
               <router-link
                 v-for="service in services"
                 :key="service.name"
                 :to="service.path"
-                class="block px-4 py-3 text-sm font-medium rounded-lg hover:bg-gray-50 hover:text-primary transition-all duration-200"
+                class="block px-4 py-2 sm:py-3 text-xs sm:text-sm font-medium rounded-lg hover:bg-gray-50 hover:text-primary transition-all duration-200"
                 active-class="text-primary bg-gray-50"
                 @click="closeMenuAndNavigate(service.path)"
               >
@@ -172,7 +172,7 @@ const closeMenuAndNavigate = (path: string) => {
           <!-- Language Toggle -->
           <button 
             @click="toggleLanguage"
-            class="w-full text-left px-4 py-3 text-sm font-semibold text-gray-600 hover:text-primary rounded-lg hover:bg-gray-50 transition-all duration-200"
+            class="w-full text-left px-4 py-3 text-xs sm:text-sm font-semibold text-gray-600 hover:text-primary rounded-lg hover:bg-gray-50 transition-all duration-200"
           >
             {{ locale === 'fr' ? 'English' : 'Français' }}
           </button>
@@ -180,7 +180,7 @@ const closeMenuAndNavigate = (path: string) => {
           <!-- Mobile Contact Button -->
           <router-link 
             to="/contact" 
-            class="block px-6 py-4 mt-4 bg-gradient-to-r from-primary to-orange-600 text-white rounded-xl font-semibold text-center hover:opacity-90 transition-all duration-200"
+            class="block px-6 py-3 sm:py-4 mt-4 bg-gradient-to-r from-primary to-orange-600 text-white rounded-xl font-semibold text-center hover:opacity-90 transition-all duration-200 text-sm sm:text-base"
             @click="closeMenuAndNavigate('/contact')"
           >
             {{ t('nav.contactUs') }}

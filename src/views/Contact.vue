@@ -1,13 +1,13 @@
 <template>
   <!-- Hero Section -->
   <div>
-    <section class="relative py-20 bg-gradient-to-r from-orange-400 via-orange-500 to-blue-600">
+    <section class="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-orange-400 via-orange-500 to-blue-600">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center" data-aos="fade-up">
-          <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
             {{ t('contact.hero.title') }}
           </h1>
-          <p class="text-xl text-white mb-8 max-w-3xl mx-auto">
+          <p class="text-base sm:text-lg lg:text-xl text-white mb-6 sm:mb-8 max-w-3xl mx-auto px-4">
             {{ t('contact.hero.subtitle') }}
           </p>
         </div>
@@ -15,28 +15,28 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="py-20 bg-white">
+    <section class="py-12 sm:py-16 lg:py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           <!-- Informations de contact -->
           <div data-aos="fade-right">
-            <div class="sticky top-24">
-              <h2 class="text-3xl font-bold mb-8">{{ t('contact.info.title') }}</h2>
-              <p class="text-gray-600 mb-12">
+            <div class="lg:sticky lg:top-24">
+              <h2 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">{{ t('contact.info.title') }}</h2>
+              <p class="text-gray-600 mb-8 sm:mb-12">
                 {{ t('contact.info.subtitle') }}
               </p>
 
-              <div class="space-y-8">
+              <div class="space-y-6 sm:space-y-8">
                 <!-- Téléphone -->
                 <div class="flex items-start space-x-4">
-                  <div class="h-12 w-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <div class="h-10 w-10 sm:h-12 sm:w-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 class="text-lg font-semibold mb-1">{{ t('contact.info.phone') }}</h3>
-                    <a href="tel:+14182647068" class="text-gray-600 hover:text-primary transition-colors">
+                    <h3 class="text-base sm:text-lg font-semibold mb-1">{{ t('contact.info.phone') }}</h3>
+                    <a href="tel:+14182647068" class="text-sm sm:text-base text-gray-600 hover:text-primary transition-colors">
                       +1 (418) 264-7068
                     </a>
                   </div>
@@ -44,14 +44,14 @@
 
                 <!-- Email -->
                 <div class="flex items-start space-x-4">
-                  <div class="h-12 w-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <div class="h-10 w-10 sm:h-12 sm:w-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 class="text-lg font-semibold mb-1">{{ t('contact.info.email') }}</h3>
-                    <a href="mailto:info@wendync.com" class="text-gray-600 hover:text-primary transition-colors">
+                    <h3 class="text-base sm:text-lg font-semibold mb-1">{{ t('contact.info.email') }}</h3>
+                    <a href="mailto:info@wendync.com" class="text-sm sm:text-base text-gray-600 hover:text-primary transition-colors">
                       info@wendync.com
                     </a>
                   </div>
@@ -59,14 +59,14 @@
 
                 <!-- Horaires -->
                 <div class="flex items-start space-x-4">
-                  <div class="h-12 w-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <div class="h-10 w-10 sm:h-12 sm:w-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 class="text-lg font-semibold mb-1">{{ t('contact.info.hours.title') }}</h3>
-                    <p class="text-gray-600">
+                    <h3 class="text-base sm:text-lg font-semibold mb-1">{{ t('contact.info.hours.title') }}</h3>
+                    <p class="text-sm sm:text-base text-gray-600">
                       {{ t('contact.info.hours.weekdays') }}<br>
                       {{ t('contact.info.hours.support') }}
                     </p>
@@ -75,16 +75,16 @@
               </div>
 
               <!-- Réseaux sociaux -->
-              <div class="mt-12">
-                <h3 class="text-lg font-semibold mb-4">{{ t('contact.info.social') }}</h3>
+              <div class="mt-8 sm:mt-12">
+                <h3 class="text-base sm:text-lg font-semibold mb-4">{{ t('contact.info.social') }}</h3>
                 <div class="flex space-x-4">
-                  <a href="#" class="h-10 w-10 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all">
-                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <a href="#" class="h-8 w-8 sm:h-10 sm:w-10 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+                    <svg class="h-4 w-4 sm:h-5 sm:w-5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                     </svg>
                   </a>
-                  <a href="#" class="h-10 w-10 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all">
-                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <a href="#" class="h-8 w-8 sm:h-10 sm:w-10 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+                    <svg class="h-4 w-4 sm:h-5 sm:w-5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
                     </svg>
                   </a>
@@ -95,9 +95,9 @@
 
           <!-- Formulaire de contact -->
           <div data-aos="fade-left">
-            <div class="bg-white rounded-2xl p-8 shadow-xl">
-              <h2 class="text-2xl font-bold mb-6">{{ t('contact.form.title') }}</h2>
-              <form class="space-y-6">
+            <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-xl">
+              <h2 class="text-xl sm:text-2xl font-bold mb-6">{{ t('contact.form.title') }}</h2>
+              <form class="space-y-4 sm:space-y-6">
                 <!-- Nom -->
                 <div>
                   <label for="name" class="block text-sm font-medium text-gray-700 mb-1">{{ t('contact.form.name') }}</label>
@@ -154,7 +154,7 @@
                 <!-- Bouton d'envoi -->
                 <button 
                   type="submit" 
-                  class="btn-primary w-full flex items-center justify-center space-x-2"
+                  class="btn-primary w-full flex items-center justify-center space-x-2 text-sm sm:text-base py-3 sm:py-4"
                 >
                   <span>{{ t('contact.form.send') }}</span>
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -169,17 +169,17 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-12 sm:py-16 lg:py-20 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
+        <div class="text-center mb-12 sm:mb-16">
           <h2 
-            class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-orange-600 mb-4" 
+            class="text-2xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-orange-600 mb-4" 
             data-aos="fade-up"
           >
             {{ t('contact.faq.title') }}
           </h2>
           <p 
-            class="text-xl text-gray-600" 
+            class="text-base sm:text-lg lg:text-xl text-gray-600 px-4" 
             data-aos="fade-up" 
             data-aos-delay="200"
           >
@@ -187,11 +187,11 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
           <div 
             v-for="(question, key) in faqQuestions" 
             :key="key"
-            class="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 relative overflow-hidden"
+            class="group bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 relative overflow-hidden"
             data-aos="fade-up"
             :data-aos-delay="question.delay"
           >
@@ -201,17 +201,17 @@
             <!-- Content -->
             <div class="relative">
               <div class="flex items-start space-x-4">
-                <div class="h-12 w-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                <div class="h-10 w-10 sm:h-12 sm:w-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                   <component 
                     :is="question.icon" 
-                    class="h-6 w-6 text-primary group-hover:text-orange-600 transition-colors duration-300"
+                    class="h-5 w-5 sm:h-6 sm:w-6 text-primary group-hover:text-orange-600 transition-colors duration-300"
                   />
                 </div>
                 <div>
-                  <h3 class="text-lg font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                  <h3 class="text-base sm:text-lg font-semibold mb-2 sm:mb-3 group-hover:text-primary transition-colors duration-300">
                     {{ t(`contact.faq.questions.${key}.title`) }}
                   </h3>
-                  <p class="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
+                  <p class="text-sm sm:text-base text-gray-600 group-hover:text-gray-700 transition-colors duration-300 leading-relaxed">
                     {{ t(`contact.faq.questions.${key}.answer`) }}
                   </p>
                 </div>
@@ -219,7 +219,7 @@
             </div>
 
             <!-- Decorative Elements -->
-            <div class="absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/5 to-orange-500/5 rounded-tl-full transform translate-x-12 translate-y-12 group-hover:translate-x-8 group-hover:translate-y-8 transition-transform duration-300"></div>
+            <div class="absolute bottom-0 right-0 w-16 sm:w-24 h-16 sm:h-24 bg-gradient-to-br from-primary/5 to-orange-500/5 rounded-tl-full transform translate-x-8 sm:translate-x-12 translate-y-8 sm:translate-y-12 group-hover:translate-x-6 sm:group-hover:translate-x-8 group-hover:translate-y-6 sm:group-hover:translate-y-8 transition-transform duration-300"></div>
           </div>
         </div>
       </div>
