@@ -437,23 +437,22 @@
                       <!-- Enhanced Sidebar -->
                       <div class="space-y-6 sm:space-y-8">
                             <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-4 sm:mb-6">{{ t('models.modal.projectInfo') }}</h3>
-                          <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-4 sm:mb-6">Informations projet</h3>
                           <dl class="space-y-4">
+                            <div>
                                 <dt class="text-sm font-medium text-gray-500 mb-1">{{ t('models.modal.category') }}</dt>
-                              <dt class="text-sm font-medium text-gray-500 mb-1">Catégorie</dt>
                               <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">{{ selectedModel.category }}</dd>
                             </div>
+                            <div>
                                 <dt class="text-sm font-medium text-gray-500 mb-1">{{ t('models.modal.installTime') }}</dt>
                                 <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">{{ t('models.modal.installTimeValue') }}</dd>
-                              <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">2-3 jours ouvrés</dd>
                             </div>
+                            <div>
                                 <dt class="text-sm font-medium text-gray-500 mb-1">{{ t('models.modal.support') }}</dt>
                                 <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">{{ t('models.modal.supportValue') }}</dd>
-                              <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">6 mois gratuits</dd>
                             </div>
+                            <div>
                                 <dt class="text-sm font-medium text-gray-500 mb-1">{{ t('models.modal.customization') }}</dt>
                                 <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">{{ t('models.modal.customizationValue') }}</dd>
-                              <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">Complète</dd>
                             </div>
                           </dl>
                         </div>
