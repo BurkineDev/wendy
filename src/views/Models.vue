@@ -127,7 +127,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-wrap justify-center gap-3 sm:gap-4">
           <button
-            v-for="category in categories.value"
+            v-for="category in categories"
             :key="category"
             @click="selectedCategory = category"
             class="group relative px-4 sm:px-6 lg:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base font-semibold transition-all duration-300 transform hover:scale-105"
@@ -321,7 +321,7 @@
           {{ t('models.cta.title') }}
         </h2>
         <p class="text-lg sm:text-xl text-white/90 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed">
-          Transformez votre vision en réalité avec nos modèles professionnels et notre expertise technique.
+          {{ t('models.cta.subtitle') }}
         </p>
         <router-link 
           to="/contact" 
@@ -405,7 +405,7 @@
                         <div>
                           <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 flex items-center gap-3">
                             <div class="w-1 h-8 bg-gradient-to-b from-primary to-orange-600 rounded-full"></div>
-                            Caractéristiques principales
+                            {{ t('models.modal.mainFeatures') }}
                           </h3>
                           <ul class="space-y-3 sm:space-y-4">
                             <li v-for="(feature, index) in selectedModel.features" :key="index" class="flex items-start group">
@@ -420,7 +420,7 @@
                         <div>
                           <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 flex items-center gap-3">
                             <div class="w-1 h-8 bg-gradient-to-b from-blue-500 to-purple-600 rounded-full"></div>
-                              {{ t('models.modal.mainFeatures') }}
+                            {{ t('models.modal.technologies') }}
                           </h3>
                           <div class="flex flex-wrap gap-3">
                             <span 
@@ -436,23 +436,24 @@
 
                       <!-- Enhanced Sidebar -->
                       <div class="space-y-6 sm:space-y-8">
-                            <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-4 sm:mb-6">{{ t('models.modal.projectInfo') }}</h3>
+                        <div>
+                          <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-4 sm:mb-6">{{ t('models.modal.projectInfo') }}</h3>
                           <dl class="space-y-4">
                             <div>
-                                <dt class="text-sm font-medium text-gray-500 mb-1">{{ t('models.modal.category') }}</dt>
+                              <dt class="text-sm font-medium text-gray-500 mb-1">{{ t('models.modal.category') }}</dt>
                               <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">{{ selectedModel.category }}</dd>
                             </div>
                             <div>
-                                <dt class="text-sm font-medium text-gray-500 mb-1">{{ t('models.modal.installTime') }}</dt>
-                                <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">{{ t('models.modal.installTimeValue') }}</dd>
+                              <dt class="text-sm font-medium text-gray-500 mb-1">{{ t('models.modal.installTime') }}</dt>
+                              <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">{{ t('models.modal.installTimeValue') }}</dd>
                             </div>
                             <div>
-                                <dt class="text-sm font-medium text-gray-500 mb-1">{{ t('models.modal.support') }}</dt>
-                                <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">{{ t('models.modal.supportValue') }}</dd>
+                              <dt class="text-sm font-medium text-gray-500 mb-1">{{ t('models.modal.support') }}</dt>
+                              <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">{{ t('models.modal.supportValue') }}</dd>
                             </div>
                             <div>
-                                <dt class="text-sm font-medium text-gray-500 mb-1">{{ t('models.modal.customization') }}</dt>
-                                <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">{{ t('models.modal.customizationValue') }}</dd>
+                              <dt class="text-sm font-medium text-gray-500 mb-1">{{ t('models.modal.customization') }}</dt>
+                              <dd class="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300">{{ t('models.modal.customizationValue') }}</dd>
                             </div>
                           </dl>
                         </div>
@@ -535,7 +536,7 @@ const models = [
     description: 'Site de monitoring musculaire avec interface moderne et responsive. Solution complète pour les professionnels du sport et de la santé avec tableaux de bord analytiques.',
     image: 'https://images.unsplash.com/photo-1549060279-7e168fcee0c2?auto=format&fit=crop&q=80&w=600',
     technologies: ['WordPress', 'CSS3', 'JavaScript', 'MySQL'],
-    category: 'Corporate',
+    category: t('models.categories.corporate'),
     features: [
       'Tableau de bord personnalisable avec métriques en temps réel',
       'Suivi des performances musculaires et progression',
@@ -550,7 +551,7 @@ const models = [
     description: 'Plateforme immobilière premium pour la vente de condos de luxe. Interface élégante avec recherche avancée, visualisation 3D et système de réservation intégré.',
     image: 'https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&q=80&w=600',
     technologies: ['WordPress', 'WooCommerce', 'PHP', 'Vue.js'],
-    category: 'E-commerce',
+    category: t('models.categories.ecommerce'),
     features: [
       'Recherche avancée multi-critères avec filtres intelligents',
       'Visites virtuelles 3D haute définition',
@@ -565,7 +566,7 @@ const models = [
     description: 'Site vitrine professionnel pour cabinet comptable. Design épuré et moderne avec focus sur l\'accessibilité, la conversion client et la crédibilité.',
     image: 'https://images.pexels.com/photos/7681098/pexels-photo-7681098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     technologies: ['WordPress', 'Bootstrap', 'jQuery', 'PHP'],
-    category: 'Corporate',
+    category: t('models.categories.corporate'),
     features: [
       'Prise de rendez-vous en ligne avec agenda synchronisé',
       'Espace client sécurisé avec documents confidentiels',
@@ -580,7 +581,7 @@ const models = [
     description: 'Plateforme communautaire de services et conseils pour familles. Interface conviviale avec contenu riche, forums interactifs et ressources éducatives.',
     image: 'https://images.unsplash.com/photo-1571624436279-b272aff752b5?auto=format&fit=crop&q=80&w=600',
     technologies: ['WordPress', 'Elementor', 'PHP', 'bbPress'],
-    category: 'Blog',
+    category: t('models.categories.blog'),
     features: [
       'Forums de discussion modérés par catégories',
       'Bibliothèque de ressources téléchargeables',
@@ -595,7 +596,7 @@ const models = [
     description: 'Site corporatif pour entreprise énergétique. Design moderne axé sur la durabilité, l\'innovation technologique et la transparence environnementale.',
     image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=600',
     technologies: ['WordPress', 'SASS', 'JavaScript', 'D3.js'],
-    category: 'Corporate',
+    category: t('models.categories.corporate'),
     features: [
       'Calculateur d\'empreinte carbone interactif',
       'Carte interactive des installations avec données temps réel',
@@ -610,7 +611,7 @@ const models = [
     description: 'Portfolio musical premium avec intégration audio avancée. Expérience immersive pour artistes avec streaming, vente en ligne et gestion de fans.',
     image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&q=80&w=600',
     technologies: ['WordPress', 'Web Audio API', 'React', 'Stripe'],
-    category: 'Portfolio',
+    category: t('models.categories.portfolio'),
     features: [
       'Lecteur audio personnalisé avec playlists',
       'Visualisation des ondes sonores en temps réel',
